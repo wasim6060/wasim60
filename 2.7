@@ -1,0 +1,20 @@
+def printparanthesis(str,n):
+    if(n>0):
+        _printparanthesis(str,0,n,0,0)
+    return
+def _printparanthesis(str,pos,n,open,close):
+    if(close==n):
+        for i in str:
+            print(i,end="")
+        print()
+        return
+    else:
+        if(open>close):
+            str[pos]=')'
+            _printparanthesis(str,pos+1,n,open,close+1)
+        if(open<n):
+            str[pos]='('
+            _printparanthesis(str,pos+1,n,open+1,close)
+n=int(input("enter the number"))
+str=[""]*2*n
+printparanthesis(str,n)
