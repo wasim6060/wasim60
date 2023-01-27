@@ -1,0 +1,17 @@
+n=int(input("enter the no.of elements:"))
+l=[]
+if n>=0:
+     while n>=1:
+         i=int(input("enter the element:"))
+         l.append(i)
+         n=n-1
+         even=0
+         odd=0
+     for p in l:
+        if p%2==0:
+            even=even+p**2
+        else:
+            odd=odd+p**2
+     print("odd=",odd,"even=",even)
+else:
+     print("Invalid input")
