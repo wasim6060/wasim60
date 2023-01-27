@@ -1,0 +1,22 @@
+month = input("Input the month : ")
+day = int(input("Input the day: "))
+
+if month in ('January'or'Jan', 'February' or 'Feb', 'March' or 'Mar'):
+	season = 'winter'
+elif month in ('April' or 'Apr', 'May', 'June' or 'Jun'):
+	season = 'spring'
+elif month in ('July' or 'Jul', 'August' or 'Aug', 'September' or 'Sep'):
+	season = 'summer'
+else:
+	season = 'autumn'
+
+if (month == 'March' or 'Mar') and (day > 19):
+	season = 'spring'
+elif (month == 'June' or 'Jun') and (day > 20):
+	season = 'summer'
+elif (month == 'September' or 'Sep') and (day > 21):
+	season = 'autumn'
+elif (month == 'December' or 'Dec') and (day > 20):
+	season = 'winter'
+
+print("Season is",season)
