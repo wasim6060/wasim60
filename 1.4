@@ -1,0 +1,14 @@
+a=float(input("Enter the no.of fresh breads:"))
+b=float(input("Enter the no.of 1 day old breads:"))
+print("Regular price: Rs 185.00")
+if a>=0 and b>=0:
+    c=a*185
+    d=(185/100)*60
+    e=185-d
+    f=b*e
+    print("amount of fresh bread=",c)
+    print("amount of old bread=",f)
+    print("discounted amount=",b*d)
+    print("total amount=",c+f)
+else:
+    print("invalid input")
