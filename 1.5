@@ -1,0 +1,11 @@
+def cruise(T,E,L):
+    maxGuests=0
+    guests=0
+    for i in range(T):
+        guests+=E[i]-L[i]
+        maxGuests=max(maxGuests,guests)
+    return maxGuests
+T=5
+E=[7,0,5,1,3]
+L=[1,2,1,3,4]
+print(cruise(T,E,L))
